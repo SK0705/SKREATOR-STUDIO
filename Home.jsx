@@ -8,7 +8,7 @@ const homeStyles = {
     alignItems: "center",
     justifyContent: "center",
     position: "relative",
-    padding: "80px 20px", // Added padding for mobile safety
+    padding: "80px 20px",
     overflow: "hidden",
   },
 
@@ -22,7 +22,7 @@ const homeStyles = {
     background: "linear-gradient(135deg, #7c3aed, #06b6d4)",
     filter: "blur(160px)",
     opacity: 0.6,
-    pointerEvents: "none", // Ensures it doesn't block clicks
+    pointerEvents: "none",
   },
 
   contentCenter: {
@@ -44,7 +44,7 @@ const homeStyles = {
   },
 
   mainTitle: {
-    fontSize: "clamp(2.2rem, 8vw, 3.8rem)", // Responsive font sizing
+    fontSize: "clamp(2.2rem, 8vw, 3.8rem)",
     fontWeight: 800,
     lineHeight: 1.1,
     marginBottom: "20px",
@@ -75,38 +75,12 @@ const homeStyles = {
     gap: "16px",
     flexWrap: "wrap",
     marginBottom: "48px",
-  },
-
-  statsRow: {
-    display: "flex",
-    justifyContent: "center",
-    gap: "40px",
-    marginTop: "20px",
-    opacity: 0.85,
-  },
-
-  statItem: {
-    textAlign: "center",
-  },
-
-  statNumber: {
-    display: "block",
-    fontSize: "1.6rem",
-    fontWeight: 700,
-    color: "#22d3ee",
-  },
-
-  statLabel: {
-    fontSize: "0.9rem",
-    opacity: 0.7,
-    color: "#fff",
-  },
+  }
 };
 
 export default function Home() {
   return (
     <div style={homeStyles.heroWrapper}>
-      {/* Background Glow */}
       <div style={homeStyles.blurGlow}></div>
 
       <div className="container" style={{ position: "relative", zIndex: 1 }}>
@@ -133,17 +107,6 @@ export default function Home() {
             <Link to="/about" className="btn btn-outline" style={{ textDecoration: 'none' }}>
               View Startup Solutions
             </Link>
-          </div>
-
-          <div style={homeStyles.statsRow}>
-            <div style={homeStyles.statItem}>
-              <span style={homeStyles.statNumber}>10+</span>
-              <span style={homeStyles.statLabel}>Startup Builds</span>
-            </div>
-            <div style={homeStyles.statItem}>
-              <span style={homeStyles.statNumber}>0 → 1</span>
-              <span style={homeStyles.statLabel}>Products Launched</span>
-            </div>
           </div>
         </div>
       </div>
