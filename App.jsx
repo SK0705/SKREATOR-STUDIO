@@ -1,14 +1,14 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
+import Navbar from "./Navbar.jsx";
+import Footer from "./Footer.jsx";
 
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Services from "./pages/Services";
-import Join from "./pages/Join";
-import Contact from "./pages/Contact";
+import Home from "./Home.jsx";
+import About from "./About.jsx";
+import Services from "./Services.jsx";
+import Join from "./Join.jsx";
+import Contact from "./Contact.jsx";
 
-import "./styles/global.css";
+import "./global.css";
 
 export default function App() {
   return (
